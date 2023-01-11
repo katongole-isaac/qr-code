@@ -17,10 +17,12 @@
 .container {
   width: 100vw;
   height: 100vh;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--containerBg);
+  flex-direction: column;
 }
 
 .card {
@@ -30,6 +32,7 @@
   max-width: var(--cardMaxWidth);
   padding: 1em;
   border-radius: 10px;
+  border-radius: 1px solid;
   overflow: hidden;
   box-shadow: 0 2 4 4 var(--cardBg);
 }
@@ -66,4 +69,10 @@
   font-weight: 700;
   font-size: 15px;
   text-align: center;
+}
+
+.distribution {
+ position: absolute;
+  bottom: 0;
+  padding: 1em;
 }

@@ -20,6 +20,15 @@ export default function () {
             </p>
           </div>
         </div>
+
+        <div className="distribution">
+          <i>
+            <small>
+              Developer by &nbsp;
+              <a href="https://github.com/katongole-isaac/qr-code">isaac</a>
+            </small>
+          </i>
+        </div>
       </div>
     </>
   );
