@@ -1,15 +1,25 @@
 import React from "react";
 import "./app.css";
-import data from "./data.toml";
+import QRCODE from "./instructions/images/image-qr-code.png";
 
 export default function () {
   return (
     <>
-      <div>
-        <h2>Welcome to react</h2>
-      </div>
-      <div className="footer">
-        <p>Developed by {data.name} </p>
+      <div className="container">
+        <div className="card">
+          <div className="card-image">
+            <img src={QRCODE} alt="QR_CODE" />
+          </div>
+          <div className="card-body">
+            <p className="bold-text">
+              Improve your front-end skills by building projects
+            </p>
+            <p className="small-text">
+              Scan the QR code to visit Frontend Mentor and take your coding
+              skills to the next level
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );

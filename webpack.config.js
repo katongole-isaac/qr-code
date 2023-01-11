@@ -78,12 +78,17 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
+      title: "QR code",
+      favicon: path.resolve(
+        __dirname,
+        "src/instructions/images/favicon-32x32.png"
+      ),
       template: path.join(__dirname, "public/index.html"),
     }),
     new webpack.ProvidePlugin({
       React: "react",
     }),
-    new MiniCssExtractPlugin(), 
+    new MiniCssExtractPlugin(),
   ],
 
   optimization: {
