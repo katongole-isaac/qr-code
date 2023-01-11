@@ -24,7 +24,7 @@ export default function () {
         <div className="distribution">
           <i>
             <small>
-              Developer by &nbsp;
+              Developed by &nbsp;
               <a href="https://github.com/katongole-isaac/qr-code">isaac</a>
             </small>
           </i>
